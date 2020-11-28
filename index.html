@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Web Development Quiz</title>
+  </head>
+  <body>
+
+        <!-- header section -->
+    <div class="intro py-3 text-center">
+        <div class="container">
+            <h2 class="text-black display-3 my-4">Web Development Quiz</h2>
+            <p class="subtitle fancy lead font-weight-bold"><span>HTML - CSS - JavaScript</span></p>
+        </div>
+    </div>
+
+    <!-- quiz preload -->
+    <!--d-flex-->
+    <div class="pop-starter d-flex container h-100 justify-content-center text-center">
+        <div class="jumbotron my-auto">
+            <h3 class="display-5">Web Development Quiz</h3>
+            <p class="text-capitalize">test your knowledge with web developement quiz questions</p>
+            <p class="small font-weight-bold font-italic text-capitalize pb-2">HTML(20%) - CSS(40%) - JavaScript(40%)</p>
+            <p class="small font-weight-bold text-capitalize">Passing Score: <span class="lead font-weight-bold">70%</span></p>
+            <a href="#" class="btn btn-primary">Begin Test</a>
+        </div>
+    </div>
+
+    <!-- result section -->
+    <div class="results d-none container h-100 justify-content-center text-center">
+        <div class="jumbotron my-auto">
+            <h3 class="display-5">Quiz Completed</h3>
+            <p>You Scored <span class="display-4 p-3 spanTotal">0%</span></p>
+            <p class="font-weight-bold font-italic lead status"></p>
+            <p class="small font-weight-bold font-italic text-capitalize pb-4">HTML (<span class="html" ></span>%) - CSS (<span class="css"></span>%) - JavaScript (<span class="javascript"></span>%)</p>
+            <h4 class="success text-uppercase d-none congrats">congrats</h4>
+            <a href="javascript:location.reload(true)" class="btn btn-primary text-capitalize refresh">retake</a>
+        </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-5 d-none">
+        <div class="container">
+            <form class="test-form text-light">
+                <!-- HTML -->
+                <h2 class="mt-4 mb-2 text-danger text-center">HTML 5</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">1. What does HTML stands for?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q1" value="A">
+                            <label class="form-check-label">Hypertext Machine language.</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q1" value="H">
+                            <label class="form-check-label">Hypertext Markup Language.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">2. What is the font-size of the h1 heading tag?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q2" value="A">
+                            <label class="form-check-label">3.5 em</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q2" value="H">
+                            <label class="form-check-label">2 em</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">3. What is the purpose of using div tags in HTML?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q3" value="A">
+                            <label class="form-check-label">For adding headings</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q3" value="H">
+                            <label class="form-check-label">For creating different sections.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">4. Which of the following attributes is used to open an hyperlink in new tab?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="A">
+                            <label class="form-check-label">href</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="H">
+                            <label class="form-check-label">target</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line py-4"></div>
+
+                <!-- CSS -->
+                <h2 class="mt-4 mb-2 text-primary text-center">CSS</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">1. How can you created rounded corners using CSS3?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q5" value="A">
+                            <label class="form-check-label">alpha-effect: round-corner;</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q5" value="C">
+                            <label class="form-check-label">border-radius: 30px;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">2. How do you add shadow to elements in CSS3?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q6" value="A">
+                            <label class="form-check-label">shadow-right: 10px shadow-bottom: 10px;</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q6" value="C">
+                            <label class="form-check-label">box-shadow: 10px 10px 5px grey;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">3. How to force a word wrap using CSS3?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q7" value="A">
+                            <label class="form-check-label">text-wrap: break-word;</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q7" value="C">
+                            <label class="form-check-label">word-wrap: break-word;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">4. Look at the code. What piece of code is missing when make a text shadow? #basicTextShadow p{ text-shadow: 1px 1px 3px; }</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q8" value="A">
+                            <label class="form-check-label">the element</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q8" value="C">
+                            <label class="form-check-label">the id name</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line py-4"></div>
+                <!-- Javascript -->
+                <h2 class="mt-4 mb-2 text-warning text-center">JavaScript</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">1. JavaScript is a ___ -side programming language.</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q9" value="A">
+                            <label class="form-check-label">client</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q9" value="J">
+                            <label class="form-check-label">client & server</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">2. Which of the following will write the message “Hello DataFlair!” in an alert box?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q10" value="A">
+                            <label class="form-check-label">alertBox(“Hello DataFlair!”);</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q10" value="J">
+                            <label class="form-check-label">alert(“Hello DataFlair!”);</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">3. How do you find the minimum of x and y using JavaScript?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q11" value="A">
+                            <label class="form-check-label">Math.min(xy)</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q11" value="J">
+                            <label class="form-check-label">Math.min(x,y)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">4. Which JavaScript label catches all the values, except for the ones specified?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q12" value="A">
+                            <label class="form-check-label">label</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q12" value="J">
+                            <label class="form-check-label">default</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- submit button -->
+                <div class="text-center py-5 text-black">
+                    <input type="submit" class="btn btn-light btnSubmit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+   <script src="./apps.js"></script>
+  </body>
+</html>

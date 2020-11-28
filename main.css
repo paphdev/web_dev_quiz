@@ -1,0 +1,95 @@
+html,
+body {
+    /* height: 100vh; */
+    height: 100%;
+    background-color: rgb(3, 3, 3);
+}
+
+.h-100 {
+    max-height: 70vh;
+}
+
+.jumbotron {
+    background-color: lightyellow !important;
+}
+
+.btn-primary {
+    background-color: rgb(3, 3, 3) !important;
+    border: rgb(3, 3, 3) !important;
+}
+
+.btn-light {
+    background-color: rgb(114, 110, 85) !important;
+}
+
+.btn-light:hover {
+    background-color: rgb(145, 145, 144) !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(114, 110, 85) !important;
+}
+
+.intro {
+    background-color: lightyellow !important;
+}
+
+.subtitle {
+    margin: 0 0 2em 0;
+}
+
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid rgb(3, 3, 3);
+    border-top: 1px solid rgb(3, 3, 3);
+    top: 5px;
+    width: 600px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.text-white {
+    color: lightyellow !important;
+}
+
+.bg-light {
+    background-color: lightyellow !important;
+}
+
+.text-black {
+    color: rgb(3, 3, 3) !important;
+    ;
+}
+
+.line {
+    border-bottom: 1px solid lightyellow;
+}
+
+.success {
+    color: limegreen;
+}
+
+.failed {
+    color: crimson;
+}
